@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+      <style>
+         .active {
+    color: red;
+  }
+      </style>
+  </head>
+  <body>
+    <div id="warning-message">Vui lòng sử dụng trên máy tính !</div>
+    <div class="admin-qltk">
+      <div class="admin-qltk-left">
+        <div class="admin-qltk-left-top-img">
+          <img src="/Img/logo.jpg" alt="" />
+          <span>ADMIN</span>
+        </div>
+        <div class="admin-qltk-top-list">
+          <div class="accordion">
+            <div class="contentBx">
+              <div class="accordion-label">
+                <ul>
+                  <li>
+                    <ion-icon name="person-add-outline"></ion-icon>
+                    <span>Quản Lý Tài Khoản</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="accordion-content">
+                <ul>
+                  <li>
+                    <a href=""><span>Phân quyền</span></a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href=""><span>Tài khoản</span></a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href=""><span>Tiến độ học</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contentBx">
+              <div class="accordion-label">
+                <ul>
+                  <li>
+                    <ion-icon name="book-outline"></ion-icon>
+                    <span>Quản Lý Khóa Học</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="accordion-content">
+                <ul>
+                  <li>
+                    <a href=""><span>Khóa Học</span></a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href=""><span>Chương</span></a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href=""><span>Nội Dung bài học</span></a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href=""><span>Danh Mục Khóa Học</span></a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href=""><span>Code Mã Khóa Học </span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contentBx">
+              <div class="accordion-label">
+                <ul>
+                  <li>
+                    <ion-icon name="card-outline"></ion-icon>
+                    <span>Quản Lý Thanh Toán</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="accordion-content">
+                <ul>
+                  <li>
+                    <a href=""><span>Khóa học đã bán</span></a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href=""><span>Thanh toán</span></a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href=""><span>Lịch sử giao dịch</span></a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href=""><span>Doanh thu</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contentBx">
+              <div class="accordion-label">
+                <ul>
+                  <li>
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <span>Quản Lý Quiz</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="accordion-content">
+                <ul>
+                  <li>
+                    <a href=""><span>Thêm bài quiz</span></a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href=""><span>Thêm câu hỏi quiz</span></a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href=""><span>Đáp án</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="admin-qltk-left-bot">
+          <div class="admin-qltk-left-bot-list">
+            <ul>
+              <li>
+                <ion-icon name="log-in-outline"></ion-icon>
+                <span>Log out</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="admin-qltk-right">
+        <div class="admin-qltk-right-top">
+          <div class="admin-qltk-right-top-1">
+            <input type="text" placeholder="Tap to search ..." />
+            <ion-icon class="searchs" name="search-outline"></ion-icon>
+          </div>
+          <div class="admin-qltk-right-top-2">
+            <ion-icon name="notifications-outline"></ion-icon>
+            <div class="dropdown">
+              <img
+                onclick="myFunction()"
+                class="dropbtn"
+                src="/Img/user.webp" />
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="admin-qltk-right-bot">
+          <div id="quanLy" class="w3-container city">
+            <h1 style="text-align: center">Quản Lý Phân Quyền</h1>
+            <div class="quanly_item">
+                    <div id="danhSach" class="w3-container city">
+                        <table id="customers">
+                          <tr>
+                            <th style="width: 400px;">Tài khoản</th>
+                            <th>Admin</th>
+                            <th>Người dùng</th>
+                            <th>Công tác viên</th>
+                          </tr>
+                          <tr>
+                            <td>Phuc</td>
+                            <td><input style="margin-left: 80px;" type="checkbox"></td>
+                            <td><input style="margin-left: 80px;" type="checkbox"></td>
+                            <td><input style="margin-left: 80px;" type="checkbox"></td>
+                          </tr>
+                        </table>
+                        <div class="pagination" style="padding: 40px 300px">
+                          <a href="#">«</a>
+                          <a href="#">1</a>
+                          <a class="active" href="#">2</a>
+                          <a href="#">3</a>
+                          <a href="#">4</a>
+                          <a href="#">5</a>
+                          <a href="#">»</a>
+                        </div>
+                      </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var activeSpan = null;
+
+function activate(span) {
+  if (activeSpan) {
+    activeSpan.classList.remove("active");
+  }
+  span.classList.add("active");
+  activeSpan = span;
+}
+     const accordion = document.getElementsByClassName("contentBx");
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+
+        const content = accordion[i].getElementsByClassName("accordion-content")[0];
+        content.addEventListener("click", function (event) {
+          event.stopPropagation();
+        });
+      }
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+      function openCity(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(cityName).style.display = "block";
+      }
+
+      var btnContainer = document.getElementById("w33");
+      var btns = btnContainer.getElementsByClassName("w3-button");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+      function checkScreenWidth() {
+        var screenWidth = window.innerWidth;
+        var Fullscreen = document.getElementsByClassName("admin-qltk");
+        if (screenWidth < 1225) {
+          Fullscreen.style.display = "none";
+        } else {
+          Fullscreen.style.display = "block";
+        }
+      }
+      window.onload = checkScreenWidth;
+      window.onresize = checkScreenWidth;
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

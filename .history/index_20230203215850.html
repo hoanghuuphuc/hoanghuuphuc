@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/rps_mobile.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/index.html">
+          <img id="img" src="./Img/bannerWEB.png" alt="" />
+        </a>
+      </div>
+      <div class="group">
+        <ul class="navigation">
+          <li><a href="/index.html">Trang Chủ</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <button id="myBtn">Kích hoạt khóa học</button>
+        </ul>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content" style="z-index: 100;">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <img src="/Img/logene.jfif" alt="" />
+          </div>
+          <div class="modal-body">
+            <h2>Kích hoạt khóa học của bạn</h2>
+            <p>Nhập mã kích hoạt vào ô bên dưới</p>
+          </div>
+          <div class="modal-footer">
+            <input type="text" name="" id="" placeholder="Nhập mã kích hoạt">
+            <button>Kích hoạt khóa học của bạn</button>
+          </div>
+        </div>
+      </div>
+      <div class="User">
+        <div class="but">
+          <button><a href="/login.html">Đăng Nhập</a></button>
+          <button><a href="/register.html">Đăng Ký</a></button>
+        </div>
+      </div>
+      
+      <div class="search">
+        <span class="icon">
+          <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+          <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+        </span>
+      </div>
+      <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+      <div class="searchBox">
+        <input type="text" placeholder="Search here . . ." />
+      </div>
+    </header>
+    <div class="banner">
+      <img src="./Img/banner.jfif" alt="" />
+    </div>
+    <div class="content">
+      <div class="content-1"></div>
+      <div class="content-2">Front-End</div>
+      <div class="content-3"></div>
+    </div>
+    <div class="boxs">
+      <div class="box">
+        <div class="box-image">
+          <img src="./Img/Html5-Css3.png" alt="" />
+        </div>
+        <div class="box-content">
+          <div class="box-name">
+            <span>Khóa Học HTML CSS</span>
+          </div>
+          <div class="box-price">
+            <div class="price">
+              <ion-icon name="price-tag"></ion-icon>
+              <span>Giá Gốc: <a>2.100.000</a>đ</span>
+            </div>
+            <div class="sale">
+              <ion-icon name="bookmark"></ion-icon>
+              <span>Giảm 15%: <a>TPS15</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="box-btn">
+           <button><a href="/details.html">Xem Ngay</a></button>
+          <ion-icon name="cart-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-image">
+          <img src="./Img/Css.png" alt="" />
+        </div>
+        <div class="box-content">
+          <div class="box-name">
+            <span>Khóa Học Css3</span>
+          </div>
+          <div class="box-price">
+            <div class="price">
+              <ion-icon name="pricetag"></ion-icon>
+              <span>Giá Gốc: <a>2.100.000</a>đ</span>
+            </div>
+            <div class="sale">
+              <ion-icon name="bookmark"></ion-icon>
+              <span>Giảm 15%: <a>TPS15</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="box-btn">
+           <button><a href="/details.html">Xem Ngay</a></button>
+          <ion-icon name="cart-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-image">
+          <img src="./Img/Js.png" alt="" />
+        </div>
+        <div class="box-content">
+          <div class="box-name">
+            <span>Khóa Học JavaScript</span>
+          </div>
+          <div class="box-price">
+            <div class="price">
+              <ion-icon name="pricetag"></ion-icon>
+              <span>Giá Gốc: <a>2.100.000</a>đ</span>
+            </div>
+            <div class="sale">
+              <ion-icon name="bookmark"></ion-icon>
+              <span>Giảm 15%: <a>TPS15</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="box-btn">
+           <button><a href="/details.html">Xem Ngay</a></button>
+          <ion-icon name="cart-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-image">
+          <img src="./Img/React.png" alt="" />
+        </div>
+        <div class="box-content">
+          <div class="box-name">
+            <span>Khóa Học React JS</span>
+          </div>
+          <div class="box-price">
+            <div class="price">
+              <ion-icon name="pricetag"></ion-icon>
+              <span>Giá Gốc: <a>2.100.000</a>đ</span>
+            </div>
+            <div class="sale">
+              <ion-icon name="bookmark"></ion-icon>
+              <span>Giảm 15%: <a>TPS15</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="box-btn">
+           <button><a href="/details.html">Xem Ngay</a></button>
+          <ion-icon name="cart-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
+    <div class="title">
+      <h1>Khóa học nổi bật</h1>
+      <span>
+        Khám phá các kỹ năng được tìm kiếm nhiều nhất/hàng đầu trong tuần này và
+        bắt đầu việc học của bạn ngay hôm nay</span
+      >
+    </div>
+    <!-- Tab product -->
+      <!-- Tab items -->
+      <div class="tabs">
+        <div class="tab-item active">
+          <ion-icon class="tab-icon" name="logo-react"></ion-icon>
+          <span>React</span>
+        </div>
+        <div class="tab-item">
+          <ion-icon class="tab-icon" name="logo-angular"></ion-icon>
+          <span>Angular</span>
+        </div>
+        <div class="tab-item">
+          <ion-icon class="tab-icon" name="logo-javascript"></ion-icon>
+          <span>JavaScript</span>
+        </div>
+        <div class="tab-item">
+          <ion-icon class="tab-icon" name="logo-vue"></ion-icon>
+          <span>Vue</span>
+        </div>
+        <div class="tab-item">
+          <ion-icon class="tab-icon" name="logo-css3"></ion-icon>
+         <span>Css3</span>
+        </div>
+        <div class="tab-item">
+          <ion-icon class="tab-icon" name="logo-html5"></ion-icon>
+          <span>Html5</span>
+        </div>
+        
+        <div class="line"></div>
+      </div>
+      <!-- Tab content -->
+      <div class="tab-content">
+        <div class="tab-pane active">
+          <div class="boxeds">
+            <div class="boxed">
+              <div class="boxed-image">
+                <img src="/Img/React.png" alt="">
+              </div>
+              <div class="boxed-content">
+                <div class="boxed-content-name">
+                  <span>Khoa hoc JS</span>
+                </div>
+                <div class="boxed-content-price">
+                  <div class="boxed-content-price1">
+                    <ion-icon name="pricetag"></ion-icon>
+                    <span>Giá Gốc: <a>2.100.000</a>đ</span>
+                  </div>
+                  <div class="boxed-content-sale">
+                    <ion-icon name="bookmark"></ion-icon>
+                     <span>Giảm 15%: <a>TPS15</a></span>
+                  </div>
+                </div>
+                <div class="boxed-content-btn">
+                   <button><a href="/details.html">Xem Ngay</a></button>
+                  <ion-icon name="cart-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane">
+          <div class="boxeds">
+            <div class="boxed">
+              <div class="boxed-image">
+                <img src="/Img/Angular.png" alt="">
+              </div>
+              <div class="boxed-content">
+                <div class="boxed-content-name">
+                  <span>Khoa hoc JS</span>
+                </div>
+                <div class="boxed-content-price">
+                  <div class="boxed-content-price1">
+                    <ion-icon name="pricetag"></ion-icon>
+                    <span>Giá Gốc: <a>2.100.000</a>đ</span>
+                  </div>
+                  <div class="boxed-content-sale">
+                    <ion-icon name="bookmark"></ion-icon>
+                     <span>Giảm 15%: <a>TPS15</a></span>
+                  </div>
+                </div>
+                <div class="boxed-content-btn">
+                   <button><a href="/details.html">Xem Ngay</a></button>
+                  <ion-icon name="cart-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane">
+          <div class="boxeds">
+            <div class="boxed">
+              <div class="boxed-image">
+                <img src="/Img/Js.png" alt="">
+              </div>
+              <div class="boxed-content">
+                <div class="boxed-content-name">
+                  <span>Khoa hoc JS</span>
+                </div>
+                <div class="boxed-content-price">
+                  <div class="boxed-content-price1">
+                    <ion-icon name="pricetag"></ion-icon>
+                    <span>Giá Gốc: <a>2.100.000</a>đ</span>
+                  </div>
+                  <div class="boxed-content-sale">
+                    <ion-icon name="bookmark"></ion-icon>
+                     <span>Giảm 15%: <a>TPS15</a></span>
+                  </div>
+                </div>
+                <div class="boxed-content-btn">
+                   <button><a href="/details.html">Xem Ngay</a></button>
+                  <ion-icon name="cart-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane">
+          <div class="boxeds">
+            <div class="boxed">
+              <div class="boxed-image">
+                <img src="/Img/vuejs.png" alt="">
+              </div>
+              <div class="boxed-content">
+                <div class="boxed-content-name">
+                  <span>Khoa hoc JS</span>
+                </div>
+                <div class="boxed-content-price">
+                  <div class="boxed-content-price1">
+                    <ion-icon name="pricetag"></ion-icon>
+                    <span>Giá Gốc: <a>2.100.000</a>đ</span>
+                  </div>
+                  <div class="boxed-content-sale">
+                    <ion-icon name="bookmark"></ion-icon>
+                     <span>Giảm 15%: <a>TPS15</a></span>
+                  </div>
+                </div>
+                <div class="boxed-content-btn">
+                   <button><a href="/details.html">Xem Ngay</a></button>
+                  <ion-icon name="cart-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane">
+          <div class="boxeds">
+            <div class="boxed">
+              <div class="boxed-image">
+                <img src="/Img/Css.png" alt="">
+              </div>
+              <div class="boxed-content">
+                <div class="boxed-content-name">
+                  <span>Khoa hoc JS</span>
+                </div>
+                <div class="boxed-content-price">
+                  <div class="boxed-content-price1">
+                    <ion-icon name="pricetag"></ion-icon>
+                    <span>Giá Gốc: <a>2.100.000</a>đ</span>
+                  </div>
+                  <div class="boxed-content-sale">
+                    <ion-icon name="bookmark"></ion-icon>
+                     <span>Giảm 15%: <a>TPS15</a></span>
+                  </div>
+                </div>
+                <div class="boxed-content-btn">
+                   <button><a href="/details.html">Xem Ngay</a></button>
+                  <ion-icon name="cart-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane">
+          <div class="boxeds">
+            <div class="boxed">
+              <div class="boxed-image">
+                <img src="/Img/Html5-Css3.png" alt="">
+              </div>
+              <div class="boxed-content">
+                <div class="boxed-content-name">
+                  <span>Khoa hoc JS</span>
+                </div>
+                <div class="boxed-content-price">
+                  <div class="boxed-content-price1">
+                    <ion-icon name="pricetag"></ion-icon>
+                    <span>Giá Gốc: <a>2.100.000</a>đ</span>
+                  </div>
+                  <div class="boxed-content-sale">
+                    <ion-icon name="bookmark"></ion-icon>
+                     <span>Giảm 15%: <a>TPS15</a></span>
+                  </div>
+                </div>
+                <div class="boxed-content-btn">
+                  <button><a href="/details.html">Xem Ngay</a></button>
+                  <ion-icon name="cart-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="title">
+        <h1>Danh mục nổi bật</h1>
+        <span>
+          Khám phá các kỹ năng được tìm kiếm nhiều nhất/hàng đầu trong tuần này và
+          bắt đầu việc học của bạn ngay hôm nay</span
+        >
+      </div>
+      <div class="category">
+        <div class="category-card">
+          <div class="category-card-title">
+            <h2>Khóa học angular</h2>
+            <p>392 khóa học</p>
+          </div>
+          <div class="category-image">
+            <a href=""><img src="/Img/Angular.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <footer class="ft-bg">
+        <div class="footer-one">
+         <span class="logo">
+          <img src="/Img/bannerWEB.png" alt="">
+         </span>
+          <ul>
+            <li>Điện Thoại: <span>+123.456.789</span></li>
+            <li>Email: <span>volunteerqt123@gamil.com</span></li>
+            <li>Địa Chỉ: <span>Cần thơ</span></li>
+          </ul>
+        </div>
+        <div class="footer-two">
+          <span>Về Chúng Tôi</span>
+          <ul>
+            <li>Giới Thiệu</li>
+            <li>Cơ Hội Việc Làm</li>
+            <li>Lộ Trình Học</li>
+          </ul>
+        </div>
+        <div class="footer-three">
+          <span>Hỗ Trợ</span>
+          <ul>
+            <li>Liên Hệ</li>
+            <li>Bảo Mật</li>
+            <li>Điều khoản</li>
+          </ul>
+      </footer>
+      <div class="footers">
+        <div class="footers-text">
+          Designed By ThanhTri © 2022
+        </div>
+        <div class="footers-media">
+          <a href="https://www.facebook.com/"><img src="/Img/fb1.png" alt=""></a>
+          <a href=""><img src="/Img/email.png" alt=""></a>
+        </div>
+      </div>
+    <script src="./js/app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

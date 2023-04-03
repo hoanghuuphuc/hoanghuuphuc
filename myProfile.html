@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông Tin Cá Nhân</title>
+    <link rel="shortcut icon" href="./Img/logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/myProfile.css" />
+    <link rel="stylesheet" href="./css/rps_mobile.css" />
+    <link rel="stylesheet" href="./css/myProfile_rps.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/index.html">
+          <img id="img" src="./Img/logo.jpg" alt="" />
+        </a>
+      </div>
+      <div class="group">
+        <ul class="navigation">
+          <li><a href="/index.html">Trang Chủ</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <button id="myBtn">Kích hoạt khóa học</button>
+        </ul>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content" style="z-index: 100">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <img src="/Img/logene.jfif" alt="" />
+          </div>
+          <div class="modal-body">
+            <h2>Kích hoạt khóa học của bạn</h2>
+            <p>Nhập mã kích hoạt vào ô bên dưới</p>
+          </div>
+          <div class="modal-footer">
+            <input type="text" name="" id="" placeholder="Nhập mã kích hoạt" />
+            <button>Kích hoạt khóa học của bạn</button>
+          </div>
+        </div>
+      </div>
+      <div class="User">
+        <div class="but">
+          <button><a href="/login.html">Đăng Nhập</a></button>
+          <button><a href="/register.html">Đăng Ký</a></button>
+        </div>
+      </div>
+
+      <div class="search">
+        <span class="icon">
+          <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+          <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+        </span>
+      </div>
+      <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+      <div class="searchBox">
+        <input type="text" placeholder="Search here . . ." />
+      </div>
+    </header>
+    <div class="My-Profiles">
+      <h1>Thông tin cá nhân</h1>
+      <div class="My-Profile">
+        <div class="My-Profile-left">
+          <h3>Ho va Ten</h3>
+          <input type="text" name="" id="" placeholder="Nguyen Thanh Tri" />
+          <p>
+            Tên của bạn xuất hiện trên trang cá nhân và bên cạnh các bình luận
+            của bạn.
+          </p>
+        </div>
+        <div class="My-Profile-right">
+          <button id="editButton">Chỉnh Sửa</button>
+          <div id="editButtons" style="display: none">
+            <button id="saveButton">Lưu</button>
+            <button id="cancelButton">Hủy</button>
+          </div>
+        </div>
+      </div>
+      <div class="My-Profile">
+        <div class="My-Profile-left">
+          <h3>Bio</h3>
+          <input
+            type="text"
+            name=""
+            id="input"
+            placeholder="Them gioi thieu ..." />
+          <p>
+            Bio hiển thị trên trang cá nhân và trong các bài viết (blog) của
+            bạn.
+          </p>
+        </div>
+        <div class="My-Profile-right">
+          <button id="editButton1">Chỉnh Sửa</button>
+          <div id="editButtons1" style="display: none">
+            <button id="saveButton1">Lưu</button>
+            <button id="cancelButton1">Hủy</button>
+          </div>
+        </div>
+      </div>
+      <div class="My-Profile">
+        <div class="My-Profile-left My-Profile-lefts">
+          <h3 style="margin-bottom: 10px">Avatar</h3>
+          <p>Nên là ảnh vuông, chấp nhận các tệp: JPG, PNG hoặc GIF.</p>
+        </div>
+        <div class="My-Profile-right">
+          <div class="My-Profile-rights">
+            <div class="crud-img">
+              <img id="currentImage2" src="./Img/logo.jpg" alt="123" />
+            </div>
+            <div class="crud-btn">
+              <button id="editButton2">Chỉnh Sửa</button>
+              <div id="editControls2" style="display: none">
+                <button id="saveButton2">Lưu</button>
+                <button id="cancelButton2">Hủy</button>
+              </div>
+            </div>
+            <input type="file" id="fileInput2" style="display: none" />
+          </div>
+        </div>
+      </div>
+      <div class="My-Profile">
+        <div class="My-Profile-left">
+          <h3>Email</h3>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Phucngu123@gmail.com"
+            disabled />
+          <p>Email của bạn sẽ xuất hiện ở đây !</p>
+        </div>
+      </div>
+      <div class="My-Profile">
+        <div class="My-Profile-left">
+          <h3>Số Điện Thoại</h3>
+          <input type="text" name="" id="" placeholder="0123456789" disabled />
+          <p>Số điện thoại để liên kết với F5 !</p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/myProfile.js"></script>
+    <script src="./js/app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

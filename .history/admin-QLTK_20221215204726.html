@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  </head>
+  <body>
+    <div class="admin-qltk">
+      <div class="admin-qltk-left">
+        <div class="admin-qltk-left-top">
+          <div class="admin-qltk-left-top-img">
+            <img src="/Img/logene1.jpg" alt="" />
+          </div>
+          <div class="admin-qltk-top-list">
+            <div class="accordion">
+              <div class="contentBx">
+                <div class="accordion-label">
+                  <ul>
+                    <li>
+                      <ion-icon name="duplicate-outline"></ion-icon>
+                      <span>Category</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="accordion-content">
+                  <ul>
+                    <li>
+                      <span>Phân quyền tài khoản</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="accordion-label">
+                  <ul>
+                    <li>
+                      <ion-icon name="person-add-outline"></ion-icon>
+                      <span>User Manager</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="accordion-content">
+                  <ul>
+                    <li>
+                      <span>Phân quyền tài khoản</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="accordion-label">
+                  <ul>
+                    <li>
+                      <ion-icon name="videocam-outline"></ion-icon>
+                      <span>video Manager</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="accordion-content">
+                  <ul>
+                    <li>
+                      <span>Phân quyền tài khoản</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="accordion-label">
+                  <ul>
+                    <li>
+                      <ion-icon name="calendar-clear-outline"></ion-icon>
+                      <span>Course Manager</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="accordion-content">
+                  <ul>
+                    <li>
+                      <span>Phân quyền tài khoản</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="accordion-label">
+                  <ul>
+                    <li>
+                      <ion-icon name="card-outline"></ion-icon>
+                      <span>Money Manager</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="accordion-content">
+                  <ul>
+                    <li>
+                      <span>Phân quyền tài khoản</span>
+                    </li>
+                    <li>
+                      <span>Phân quyền tài khoản</span>
+                    </li>
+                    <li>
+                      <span>Phân quyền tài khoản</span>
+                    </li>
+                    <li>
+                      <span>Phân quyền tài khoản</span>
+                    </li>
+                    <li>
+                      <span>Phân quyền tài khoản</span>
+                    </li>
+                    <li>
+                      <span>Phân quyền tài khoản</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="admin-qltk-left-bot">
+          <div class="admin-qltk-left-bot-list">
+            <ul>
+              <li>
+                <ion-icon name="log-in-outline"></ion-icon>
+                <span>Log out</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="admin-qltk-right">
+        <div class="admin-qltk-right-top">
+          <div class="admin-qltk-right-top-1">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" placeholder="Tap to search ..." />
+          </div>
+          <div class="admin-qltk-right-top-2">
+            <ion-icon name="notifications-outline"></ion-icon>
+            <div class="dropdown">
+              <img
+                onclick="myFunction()"
+                class="dropbtn"
+                src="/Img/user.webp" />
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Thông tin</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const accordion = document.getElementsByClassName("contentBx");
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+      }
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

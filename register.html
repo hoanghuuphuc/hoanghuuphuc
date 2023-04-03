@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký</title>
+    <link rel="shortcut icon" href="./Img/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="./css/rps_mobile.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        id="register-form"
+        class="form-login"
+        style="background-color: #fff">
+        <div class="form-login-image">
+          <img style="height: 60px; width: auto" src="./Img/logo.jpg" alt="" />
+        </div>
+        <h1 style="text-align: center; padding: 10px">Đăng Ký</h1>
+        <div class="form-login-input">
+          <input type="text" class="form-input" placeholder=" " />
+          <label for="name" class="form-label">Email</label>
+        </div>
+        <div class="form-login-input">
+          <input
+            type="text"
+            class="form-input input-1"
+            id="password-1"
+            placeholder=" " />
+          <label for="name" class="form-label">Nhập Mật Khẩu Mới</label>
+          <i class="fa-regular fa-eye eye-open hidden"></i>
+          <i class="fa-regular fa-eye-slash eye-close"></i>
+        </div>
+        <div class="form-login-input">
+          <input
+            type="password"
+            class="form-input input-2"
+            id="password-2"
+            placeholder=" " />
+          <label for="name" class="form-label">Nhập Lại Mật Khẩu Mới</label>
+          <i class="fa-regular fa-eye eye-open hidden"></i>
+          <i class="fa-regular fa-eye-slash eye-close"></i>
+        </div>
+        <div class="btn-login">
+          <button type="submit">Đăng Ký</button>
+        </div>
+        <div class="or">
+          <span class="or-left"></span>
+          <span class="or-center">OR</span>
+          <span class="or-right"></span>
+        </div>
+      </form>
+      <div class="form-login-2">
+        <span>Bạn đã có tài khoản ? <a href="">Đăng nhập ngay</a></span>
+      </div>
+    </div>
+    <script>
+      const input1 = document.querySelector(".input-1");
+      const eyeOpen1 = document.querySelector(".eye-open");
+      const eyeClose1 = document.querySelector(".eye-close");
+      eyeOpen1.addEventListener("click", function () {
+        eyeOpen1.classList.add("hidden");
+        eyeClose1.classList.remove("hidden");
+        input1.setAttribute("type", "password");
+      });
+      eyeClose1.addEventListener("click", function () {
+        eyeOpen1.classList.remove("hidden");
+        eyeClose1.classList.add("hidden");
+        input1.setAttribute("type", "text");
+      });
+      const input2 = document.querySelector(".input-2");
+      const eyeOpen2 = document.querySelectorAll(".eye-open")[1];
+      const eyeClose2 = document.querySelectorAll(".eye-close")[1];
+      eyeOpen2.addEventListener("click", function () {
+        eyeOpen2.classList.add("hidden");
+        eyeClose2.classList.remove("hidden");
+        input2.setAttribute("type", "password");
+      });
+      eyeClose2.addEventListener("click", function () {
+        eyeOpen2.classList.remove("hidden");
+        eyeClose2.classList.add("hidden");
+        input2.setAttribute("type", "text");
+      });
+      const emailInput = document.querySelector('.form-input[type="text"]');
+      const emailLabel = document.querySelector('.form-label[for="name"]');
+
+      function validateEmail() {
+        const emailValue = emailInput.value.trim();
+
+        if (emailValue === "") {
+          emailLabel.classList.add("error");
+          emailInput.classList.add("error");
+          emailLabel.textContent = "Email không được bỏ trống";
+          return false;
+        } else if (!isValidEmail(emailValue)) {
+          emailLabel.classList.add("error");
+          emailInput.classList.add("error");
+          emailLabel.textContent = "Định dạng email không đúng";
+          return false;
+        } else {
+          emailLabel.classList.remove("error");
+          emailInput.classList.remove("error");
+          emailLabel.textContent = "Email";
+          return true;
+        }
+      }
+
+      function isValidEmail(email) {
+        // Kiểm tra định dạng email sử dụng regex
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+
+      emailInput.addEventListener("blur", validateEmail);
+    </script>
+  </body>
+</html>

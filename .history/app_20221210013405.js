@@ -1,0 +1,68 @@
+let searchBtn = document.querySelector(".searchBtn");
+let closeBtn = document.querySelector(".closeBtn");
+let searchBox = document.querySelector(".searchBox");
+let navigation = document.querySelector(".navigation");
+let menuToggle = document.querySelector(".menuToggle");
+let header = document.querySelector("header");
+searchBtn.onclick = function () {
+  searchBox.classList.add("active");
+  closeBtn.classList.add("active");
+  searchBtn.classList.add("active");
+  menuToggle.classList.add("hide");
+  header.classList.remove("open");
+};
+closeBtn.onclick = function () {
+  searchBox.classList.remove("active");
+  closeBtn.classList.remove("active");
+  searchBtn.classList.remove("active");
+  menuToggle.classList.remove("hide");
+};
+menuToggle.onclick = function () {
+  header.classList.toggle("open");
+  searchBox.classList.remove("active");
+  closeBtn.classList.remove("active");
+  searchBtn.classList.remove("active");
+};
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+
+const tabs = $$(".tab-item");
+const panes = $$(".tab-pane");
+
+const tabActive = $(".tab-item.active");
+const line = $(".tabs .line");
+
+// SonDN fixed - Active size wrong size on first load.
+// Original post: https://www.facebook.com/groups/649972919142215/?multi_permalinks=1175881616551340
+requestIdleCallback(function () {
+  line.style.left = tabActive.offsetLeft + "px";
+  line.style.width = tabActive.offsetWidth + "px";
+});
+
+tabs.forEach((tab, index) => {
+  const pane = panes[index];
+
+  tab.onclick = function () {
+    $(".tab-item.active").classList.remove("active");
+    $(".tab-pane.active").classList.remove("active");
+
+    line.style.left = this.offsetLeft + "px";
+    line.style.width = this.offsetWidth + "px";
+
+    this.classList.add("active");
+    pane.classList.add("active");
+  };
+});
+const input = document.querySelector(".form-input");
+const eyeOpen = document.querySelector(".eye-open");
+const eyeClose = document.querySelector(".eye-close");
+eyeOpen.addEventListener("click", function () {
+  eyeOpen.classList.add("hidden");
+  eyeClose.classList.remove("hidden");
+  input.setAttribute("type", "password");
+});
+eyeClose.addEventListener("click", function () {
+  eyeOpen.classList.remove("hidden");
+  eyeClose.classList.add("hidden");
+  input.setAttribute("type", "text");
+});
